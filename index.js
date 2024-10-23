@@ -65,6 +65,10 @@ app.get("/api/reviews", async (req, res) => {
   }
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 // Set up server listening
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);
